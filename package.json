@@ -1,12 +1,15 @@
 {
-  "name": "mysql2",
-  "version": "3.3.1",
+  "name": "@cweijan/mysql2",
+  "version": "3.3.3",
   "description": "fast mysql driver. Implements core protocol, prepared statements, ssl and compression in native JS",
   "main": "index.js",
   "directories": {
     "example": "examples"
   },
   "typings": "typings/mysql/index",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "npm run lint:docs && npm run lint:code",
     "lint:code": "eslint index.js promise.js \"lib/**/*.js\" \"test/**/*.js\" \"benchmarks/**/*.js\"",
@@ -30,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sidorares/node-mysql2"
+    "url": "https://github.com/database-client/node-mysql2"
   },
   "keywords": [
     "mysql",
